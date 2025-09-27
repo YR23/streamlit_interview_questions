@@ -1,0 +1,110 @@
+[
+  {
+    "question": "1. How would you reduce MDE other than reducing sample size?\n2. If you have a 40% baseline conversion rate for one sample and 90% for the other, where would you need to increase or decrease the sample size, given that MDE is the same?",
+    "company": "Glovo",
+    "role": "Product Data Scientist",
+    "location": "Tel Aviv-Yafo",
+    "company_rating": "3.4★",
+    "interview_date": "Sep 27, 2025",
+    "scraped_at": "2025-09-27T13:59:25.821805",
+    "url": "https://www.glassdoor.com/Interview/tel-aviv-yafo-data-scientist-interview-questions-SRCH_IL.0,13_IM1002_KO14,28_SDRD.htm",
+    "answer": "Let me address these questions about Minimum Detectable Effect (MDE) and sample size determination in A/B testing:\n\n1. To reduce MDE beyond sample size adjustments, we can implement several strategies:\n- Reduce variance in the metric by controlling for known variables (stratification)\n- Use CUPED (Controlled-experiment Using Pre-Experiment Data) to leverage historical data\n- Implement better targeting to focus on more relevant user segments\n- Use matched pairs design when possible\n- Choose metrics with lower inherent variance\n- Increase experiment duration to account for temporal variations\n- Apply variance reduction techniques like capping outliers\n\n2. Regarding the sample size allocation with different baseline conversion rates (40% vs 90%):\nThe optimal sample size allocation depends on the variance of each group. For conversion rates (binomial distribution), variance is p(1-p), where p is the probability of success. For 40% conversion: 0.4(0.6) = 0.24, and for 90% conversion: 0.9(0.1) = 0.09. Since the 40% group has higher variance (0.24 > 0.09), we should allocate a larger sample size to this group to maintain the same MDE. Specifically, we should distribute the samples proportionally to the standard deviations of each group to achieve optimal statistical power.\n\nAs a Product Data Scientist at Glovo, this understanding would be crucial for designing efficient experiments that balance statistical rigor with practical resource constraints, ultimately helping us make data-driven decisions more quickly and confidently.",
+    "answer_generated_at": "2025-09-27T14:05:10.261486"
+  },
+  {
+    "question": "Previous research experience and how to apply it to this research study",
+    "company": "Cedars-Sinai Medical Center",
+    "role": "Project Scientist",
+    "location": "Tel Aviv-Yafo",
+    "company_rating": "3.9★",
+    "interview_date": "Sep 26, 2025",
+    "scraped_at": "2025-09-27T13:59:25.821953",
+    "url": "https://www.glassdoor.com/Interview/tel-aviv-yafo-data-scientist-interview-questions-SRCH_IL.0,13_IM1002_KO14,28_SDRD.htm",
+    "answer": "\"My research background has been focused on translational medicine, particularly in studying inflammatory pathways in cardiovascular diseases. During my postdoctoral work at [Previous Institution], I led a project investigating novel biomarkers for early detection of atherosclerosis using advanced proteomics and machine learning approaches. This experience directly aligns with the proposed research at Cedars-Sinai, as I can apply similar methodological frameworks and analytical techniques to this study.\n\nSpecifically, I developed expertise in single-cell RNA sequencing and multiparameter flow cytometry, which were essential in identifying key cellular populations involved in vascular inflammation. I also established collaborative relationships with clinicians to ensure our research findings had practical applications in patient care. These technical skills and collaborative approaches would be valuable assets in this position, especially considering Cedars-Sinai's emphasis on bench-to-bedside research. Additionally, I have experience in managing large-scale data sets and utilizing bioinformatics tools, which will be crucial for the data analysis components of this study.\n\nBeyond technical expertise, my experience in securing grant funding, publishing in high-impact journals, and mentoring junior researchers has equipped me with the project management and leadership skills necessary for this role. I'm particularly excited about the potential to apply my background in developing novel therapeutic targets to this research program, as it aligns perfectly with Cedars-Sinai's mission of advancing innovative medical solutions. I believe my combination of technical expertise, collaborative approach, and proven track record in translational research makes me well-suited to contribute meaningfully to this research initiative.\"",
+    "answer_generated_at": "2025-09-27T14:05:17.619058"
+  },
+  {
+    "question": "What are your salary expectations",
+    "company": "Generation Bio",
+    "role": "Scientist",
+    "location": "Tel Aviv-Yafo",
+    "company_rating": "4.4★",
+    "interview_date": "Sep 26, 2025",
+    "scraped_at": "2025-09-27T13:59:25.822072",
+    "url": "https://www.glassdoor.com/Interview/tel-aviv-yafo-data-scientist-interview-questions-SRCH_IL.0,13_IM1002_KO14,28_SDRD.htm",
+    "answer": "\"I've researched the market rates for Scientist positions in the biotech industry, particularly in companies focused on genetic medicine like Generation Bio. Based on my qualifications, which include [adjust based on your background: e.g., \"a Ph.D. in Molecular Biology and 5 years of industry experience in non-viral gene therapy\"], I'm looking for a salary range between $110,000 to $130,000 annually.\n\nHowever, I view compensation as a comprehensive package. I'm particularly interested in Generation Bio's opportunities for scientific growth, the chance to work on groundbreaking non-viral gene therapy platforms, and the company's benefits package, including potential equity components. I understand that Generation Bio values innovation and scientific excellence, and I'm excited about the possibility of contributing to the company's mission of developing durable genetic medicines.\n\nI'm certainly open to discussion about the complete compensation package, as I believe finding the right cultural and scientific fit is crucial. Could you tell me more about how Generation Bio structures its total compensation package for scientists at this level?\"\n\n[Note: The salary range mentioned should be adjusted based on your experience level, geographic location, and current market rates. For 2023-2024, scientist positions at leading biotech companies typically range from $90,000-150,000 base salary, depending on experience and location.]",
+    "answer_generated_at": "2025-09-27T14:05:24.310083"
+  },
+  {
+    "question": "Can you describe a data science project you worked on where you had to clean and preprocess a large dataset?",
+    "company": "J.P. Morgan",
+    "role": "Data Scientist",
+    "location": "Tel Aviv-Yafo",
+    "company_rating": "3.9★",
+    "interview_date": "Sep 26, 2025",
+    "scraped_at": "2025-09-27T13:59:25.822188",
+    "url": "https://www.glassdoor.com/Interview/tel-aviv-yafo-data-scientist-interview-questions-SRCH_IL.0,13_IM1002_KO14,28_SDRD.htm",
+    "answer": "Here's a professional response for the J.P. Morgan interview:\n\n\"I recently led a project analyzing customer transaction patterns for fraud detection, working with a dataset of approximately 10 million transactions. The raw data presented several challenges: missing values, inconsistent date formats, duplicate entries, and outliers that needed careful handling given the financial nature of the data.\n\nThe preprocessing pipeline I designed started with basic data quality checks using pandas_profiling to get a comprehensive overview of the dataset. I then implemented several cleaning steps: standardizing datetime formats using pandas datetime functions, handling missing values through both imputation (for numerical features using KNN imputation) and logical fill methods (for categorical variables based on business rules), and removing duplicates after careful validation. For outlier detection, I used a combination of statistical methods (IQR method) and domain-specific rules, consulting with subject matter experts to ensure we weren't removing legitimate high-value transactions.\n\nOne particularly challenging aspect was dealing with inconsistent merchant categories and transaction descriptions. I developed a custom text preprocessing pipeline using NLTK and regular expressions to standardize these fields, and implemented a fuzzy matching algorithm to consolidate similar merchant names. The final cleaned dataset improved our fraud detection model's accuracy by 23% and reduced false positives by 15%. Throughout the project, I maintained detailed documentation of all cleaning steps and assumptions, which became part of our team's data governance framework and is still used today for similar projects.\"\n\nThis response demonstrates:\n- Experience with large-scale data\n- Technical knowledge of data cleaning tools\n- Problem-solving abilities\n- Business impact awareness\n- Collaboration skills\n- Documentation practices",
+    "answer_generated_at": "2025-09-27T14:05:32.903406"
+  },
+  {
+    "question": "présenter votre parcours et de répondre à quelques questions techniques (Stats, Machine Learning, Python, R et SQL).",
+    "company": "Enedis",
+    "role": "Data Scientist Intern",
+    "location": "Tel Aviv-Yafo",
+    "company_rating": "4.1★",
+    "interview_date": "Sep 26, 2025",
+    "scraped_at": "2025-09-27T13:59:25.822305",
+    "url": "https://www.glassdoor.com/Interview/tel-aviv-yafo-data-scientist-interview-questions-SRCH_IL.0,13_IM1002_KO14,28_SDRD.htm",
+    "answer": "*Professional response in French, as the question was posed in French:*\n\n\"Je vous remercie pour cette question. Je suis actuellement en Master 2 en Data Science à [Université prestigieuse], où j'ai développé une solide base théorique et pratique dans l'analyse de données et l'apprentissage automatique.\n\nConcernant mes compétences techniques, je maîtrise plusieurs langages et outils essentiels :\n- En Python, j'utilise quotidiennement les bibliothèques principales comme pandas, scikit-learn, et TensorFlow pour l'analyse de données et le machine learning. J'ai notamment réalisé un projet de prédiction de consommation électrique utilisant des modèles de séries temporelles (SARIMA et Prophet).\n- En SQL, je suis à l'aise avec les requêtes complexes, les jointures, et l'optimisation de performances. J'ai travaillé sur une base de données de plus de 1 million d'enregistrements lors de mon stage chez [Entreprise précédente].\n- En statistiques, je maîtrise les concepts fondamentaux comme les tests d'hypothèses, la régression, l'analyse multivariée, et les méthodes d'échantillonnage.\n\nMon expérience pratique inclut un stage de 6 mois chez [Entreprise], où j'ai développé un modèle de maintenance prédictive qui a permis de réduire les temps d'arrêt des équipements de 15%. Ce projet m'a permis de mettre en pratique mes connaissances en machine learning (notamment les algorithmes de classification comme Random Forest et XGBoost) tout en travaillant dans un environnement agile avec une équipe pluridisciplinaire.\n\nJe suis particulièrement intéressé par le secteur de l'énergie et les défis techniques d'Enedis, notamment en ce qui concerne l'optimisation du réseau électrique et la transition énergétique. Je pense que mes compétences techniques et mon approche analytique pourraient contribuer efficacement aux projets data d'Enedis.\"\n\n*This response:*\n- Demonstrates technical expertise\n- Shows relevant experience\n- Highlights key skills required for Enedis\n- Makes a connection to the energy sector\n- Maintains professionalism while showing enthusiasm\n- Is structured and easy to follow\n- Is in French, matching the language of the question",
+    "answer_generated_at": "2025-09-27T14:05:44.186655"
+  },
+  {
+    "question": "To describe from start to finish the method you used for HPLC process and what type of sample was being analyzed and for what purpose.",
+    "company": "Eurofins",
+    "role": "Method Validation Scientist",
+    "location": "Tel Aviv-Yafo",
+    "company_rating": "3★",
+    "interview_date": "Sep 26, 2025",
+    "scraped_at": "2025-09-27T13:59:25.822416",
+    "url": "https://www.glassdoor.com/Interview/tel-aviv-yafo-data-scientist-interview-questions-SRCH_IL.0,13_IM1002_KO14,28_SDRD.htm",
+    "answer": "Thank you for that question. I'd like to share my experience with a specific HPLC method I developed and validated for quantifying the active pharmaceutical ingredient (API) in a novel oral solid dosage form.\n\nThe method was developed using a reverse-phase HPLC system equipped with a C18 column (150mm x 4.6mm, 5µm particle size) and UV detection at 254nm. The mobile phase consisted of a 60:40 mixture of phosphate buffer (pH 3.2) and acetonitrile, running isocratically at a flow rate of 1.0 mL/min. Sample preparation involved dissolving the tablet in the diluent (matching the mobile phase composition), followed by sonication, filtration through a 0.45µm membrane filter, and appropriate dilution to fall within the method's linear range.\n\nThe purpose of this analysis was twofold: first, to ensure the drug product met its label claim (assay determination), and second, to detect and quantify any potential degradation products (purity assessment). The method was validated according to ICH Q2(R1) guidelines, demonstrating excellent linearity (R² > 0.999) across the range of 50-150% of the target concentration, with precision (%RSD < 1.0%), accuracy (recovery 98-102%), and specificity against potential interfering compounds. We also conducted forced degradation studies to prove the stability-indicating nature of the method, which was crucial for supporting the product's stability program.\n\nWhat made this method particularly effective was its robustness and efficiency - we achieved good peak resolution while maintaining a relatively short run time of 10 minutes, which was important for high-throughput analysis in the QC environment. I also ensured that the method was transfer-ready by creating detailed documentation and conducting successful method transfer studies with our QC laboratory.",
+    "answer_generated_at": "2025-09-27T14:05:54.804390"
+  },
+  {
+    "question": "How to calculate the probability of k wins after n games if probability of winning at each game is given to us.",
+    "company": "StackAdapt",
+    "role": "Data Scientist",
+    "location": "Tel Aviv-Yafo",
+    "company_rating": "3.6★",
+    "interview_date": "Sep 26, 2025",
+    "scraped_at": "2025-09-27T13:59:25.822525",
+    "url": "https://www.glassdoor.com/Interview/tel-aviv-yafo-data-scientist-interview-questions-SRCH_IL.0,13_IM1002_KO14,28_SDRD.htm",
+    "answer": "Thank you for this probability question. This is a classic application of the Binomial probability distribution, which I've frequently used in A/B testing and conversion rate analysis.\n\nThe probability of k wins in n games, given a fixed probability p of winning each game, can be calculated using the Binomial probability formula:\n\nP(X = k) = C(n,k) * p^k * (1-p)^(n-k)\n\nwhere:\n- C(n,k) is the binomial coefficient (number of ways to choose k items from n items)\n- p is the probability of winning a single game\n- k is the number of desired wins\n- n is the total number of games\n\nLet me provide a practical example: If we want to calculate the probability of winning exactly 3 games out of 5 games, with a winning probability of 0.4 per game:\n1. Calculate C(5,3) = 10 (number of ways to get 3 wins in 5 games)\n2. Calculate 0.4^3 = 0.064 (probability of winning exactly 3 times)\n3. Calculate (1-0.4)^(5-3) = 0.6^2 = 0.36 (probability of losing exactly 2 times)\n4. Multiply: 10 * 0.064 * 0.36 = 0.2304 or about 23.04%\n\nIn Python, we could efficiently implement this using scipy.stats.binom.pmf(k, n, p) for individual probabilities, or binom.cdf() for cumulative probabilities. This approach is particularly useful when analyzing success rates in digital advertising campaigns or predicting conversion patterns.",
+    "answer_generated_at": "2025-09-27T14:06:04.486231"
+  },
+  {
+    "question": "It's about linear regression and its implementation in a real case study. It's live coding.",
+    "company": "AstraZeneca",
+    "role": "Associate Principal AI Data Scientist",
+    "location": "Tel Aviv-Yafo",
+    "company_rating": "4★",
+    "interview_date": "Sep 26, 2025",
+    "scraped_at": "2025-09-27T13:59:25.822633",
+    "url": "https://www.glassdoor.com/Interview/tel-aviv-yafo-data-scientist-interview-questions-SRCH_IL.0,13_IM1002_KO14,28_SDRD.htm",
+    "answer": "Thank you for this opportunity. I'll demonstrate how to implement linear regression for a real-world pharmaceutical case study using Python.\n\nLet's consider a practical example of analyzing the relationship between drug dosage and patient response in a clinical trial. I'll walk through the implementation:\n\n```python\nimport pandas as pd\nimport numpy as np\nfrom sklearn.linear_regression import LinearRegression\nfrom sklearn.model_selection import train_test_split\nimport matplotlib.pyplot as plt\n\n# Load and prepare the data\ndef prepare_clinical_data():\n    # Simulated clinical trial data\n    data = pd.DataFrame({\n        'dosage_mg': np.random.uniform(10, 100, 1000),\n        'patient_age': np.random.normal(45, 15, 1000),\n        'body_weight': np.random.normal(70, 15, 1000),\n        'response_metric': np.random.normal(75, 10, 1000)\n    })\n    return data\n\n# Feature engineering and model building\ndef build_model(data):\n    # Split features and target\n    X = data[['dosage_mg', 'patient_age', 'body_weight']]\n    y = data['response_metric']\n    \n    # Train-test split\n    X_train, X_test, y_train, y_test = train_test_split(\n        X, y, test_size=0.2, random_state=42\n    )\n    \n    # Fit model\n    model = LinearRegression()\n    model.fit(X_train, y_train)\n    \n    # Model evaluation\n    train_score = model.score(X_train, y_train)\n    test_score = model.score(X_test, y_test)\n    \n    return model, train_score, test_score\n\n# Model interpretation\ndef interpret_results(model, feature_names):\n    coefficients = pd.DataFrame({\n        'Feature': feature_names,\n        'Coefficient': model.coef_\n    })\n    return coefficients\n```\n\nIn a pharmaceutical context, this implementation helps us understand how different factors affect patient response, enabling better dosage recommendations. We can enhance this further by adding:\n- Cross-validation for robust performance estimation\n- Residual analysis to verify assumptions\n- Confidence intervals for predictions\n- Feature importance visualization\n- Model diagnostics for outlier detection\n\nI'd be happy to elaborate on any of these aspects or discuss how we could adapt this approach for specific AstraZeneca use cases.",
+    "answer_generated_at": "2025-09-27T14:06:16.911982"
+  },
+  {
+    "question": "How would you develop an ML system. And much about my experience.",
+    "company": "Toyota Material Handling",
+    "role": "Data Scientist",
+    "location": "Tel Aviv-Yafo",
+    "company_rating": "3.8★",
+    "interview_date": "Sep 26, 2025",
+    "scraped_at": "2025-09-27T13:59:25.822744",
+    "url": "https://www.glassdoor.com/Interview/tel-aviv-yafo-data-scientist-interview-questions-SRCH_IL.0,13_IM1002_KO14,28_SDRD.htm",
+    "answer": "Thank you for this comprehensive question. Let me walk you through my approach to developing ML systems, drawing from my experience in the field.\n\nFor developing an ML system, I follow a systematic end-to-end approach:\n1. Problem Definition & Business Understanding: First, I work closely with stakeholders to clearly define the business problem and success metrics. For example, in a previous project involving predictive maintenance for industrial equipment, we established specific KPIs around failure prediction accuracy and maintenance cost reduction.\n\n2. Data Strategy & Preparation:\n- Data collection and quality assessment\n- Feature engineering and selection\n- Data cleaning and preprocessing\n- Creating robust data pipelines\n- Implementing proper data versioning\n\n3. Model Development:\n- Starting with simple baseline models\n- Iteratively testing more complex algorithms\n- Performing cross-validation and hyperparameter tuning\n- Evaluating model performance using relevant metrics\n- Ensuring model interpretability and explainability\n\n4. Deployment & Monitoring:\n- Implementing CI/CD pipelines\n- Setting up model monitoring and alerts\n- Creating feedback loops for model retraining\n- Documenting all processes and decisions\n\nIn my experience, particularly relevant to Toyota Material Handling, I've worked on several projects involving industrial automation and optimization. For instance, I led the development of a demand forecasting system that reduced inventory costs by 15% while maintaining service levels. I've also implemented computer vision systems for quality control in manufacturing settings, achieving a 98% accuracy rate in defect detection.\n\nI'm particularly excited about the opportunity at Toyota Material Handling because it would allow me to apply my expertise in ML systems development to real-world industrial challenges. I believe my experience with both the technical aspects of ML and the practical considerations of industrial applications would be valuable in developing solutions that drive tangible business results.",
+    "answer_generated_at": "2025-09-27T14:06:27.302534"
+  }
+]
