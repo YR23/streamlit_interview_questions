@@ -3,11 +3,7 @@ import json
 import requests
 from datetime import datetime
 from urllib.parse import urljoin
-
-def logo_for(campaign_name: str) -> str:
-    """Generate company logo URL using Clearbit API"""
-    dom = (campaign_name or "").strip().split()[0].rstrip("/").lower()
-    return f"https://logo.clearbit.com/{dom}"
+from logo_fetcher import get_company_logo
 
 def load_interview_data():
     """Load interview data from JSON file"""
@@ -79,10 +75,13 @@ def main():
 
             with col1:
                 # Company logo
-                logo_url = logo_for(item['company'])
-                try:
-                    st.image(logo_url, width=80)
-                except:
+                logo_url = get_company_logo(item['company'], size=128)
+                if logo_url:
+                    try:
+                        st.image(logo_url, width=80)
+                    except:
+                        st.write("🏢")
+                else:
                     st.write("🏢")
 
             with col2:
